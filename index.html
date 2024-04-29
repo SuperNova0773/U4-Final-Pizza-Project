@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="U4-Final.css">
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>Pizza Order</legend>
+            <label for="size">Select Pizza Size:</label>
+            <select id="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <label for="toppings">Select Toppings:</label>
+            <input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni">
+            <label for="pepperoni">Pepperoni</label><br>
+            <input type="checkbox" id="mushrooms" name="toppings" value="Mushrooms">
+            <label for="mushrooms">Mushrooms</label><br>
+            <input type="checkbox" id="onions" name="toppings" value="Onions">
+            <label for="onions">Onions</label><br>
+            <input type="checkbox" id="sausage" name="toppings" value="Sausage">
+            <label for="sausage">Sausage</label><br>
+            <input type="checkbox" id="bellpeppers" name="toppings" value="Bell Peppers">
+            <label for="bellpeppers">Bell Peppers</label><br>
+
+            <button onclick="calculatePrice()">Calculate Price</button>
+            <button onclick="resetForm()">Reset Form</button>
+
+            <div id="receipt"></div>
+        </fieldset>
+        <div id="pizzaImageContainer">
+            <img src="../download (7).jpg" id="pizzaImage" alt="Pizza Image">
+        </div>
+    </div>
+    
+    <script src="U4-Final.js"></script>
+    
+</body>
+</html>
